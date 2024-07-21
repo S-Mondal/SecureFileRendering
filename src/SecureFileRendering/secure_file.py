@@ -2,8 +2,6 @@ from flask_session import Session
 from flask import session, redirect, url_for, abort, send_from_directory
 import os
 
-__config__ = "0.0.1"
-
 class SecureFileRendering:
 	def __init__(self, app=None):
 		if app is not None:

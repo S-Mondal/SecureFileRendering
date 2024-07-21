@@ -19,4 +19,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
+Homepage = "https://github.com/S-Mondal/SecureFileRendering"
+
+[tool.setuptools.dynamic]
+version = {file = "src/VERSION"}

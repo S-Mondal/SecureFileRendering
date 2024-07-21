@@ -31,3 +31,7 @@ if __name__ == '__main__':
 
 -	Flask-Session
 -	Flask
+
+## Description
+
+Mention any path of a file and render the file securely without exposing the folder structure. File will be downloaded with a secure link which can be accessed only once. Example: /test/12345678
