@@ -9,9 +9,14 @@ sfr = SecureFileRendering(app)
 
 
 @app.route("/downloadpdf")
-def test():
+def test_pdf():
 	path = "static/a.pdf"
 	return sfr.securely_render_file(path)
+
+@app.route("/downloadzip")
+def test_zip():
+	paths = ["static/a.pdf"]
+	return sfr.securely_render_file(paths, many=True)
 
 if __name__ == '__main__':
 	app.run()
